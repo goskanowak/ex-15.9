@@ -25,9 +25,8 @@ class App extends React.Component {
   render() {
     return (
       <section>
-       
         <form className={'search'} onSubmit={event => this.onSubmit(event)}>
-          <img className={'git'} src={'https://avatars0.githubusercontent.com/u/9919?s=280&v=4'}/>
+          <img className={'git'} src={'https://avatars0.githubusercontent.com/u/9919?s=280&v=4'} alt={'GitHub'}/>
           <h1>GitHub</h1>
           <label htmlFor="searchText">Search or jump to</label>
           <input
@@ -60,7 +59,7 @@ class User extends React.Component {
   render() {
     return (
       <div className={'user'}>
-        <img src={this.props.user.avatar_url} style={{maxWidth: '100px'}}/>
+        <img src={this.props.user.avatar_url} alt={'User GitHub'} style={{maxWidth: '100px'}}/>
         <a href={this.props.user.html_url} target="_blank">{this.props.user.login}</a>
       </div>
     );
